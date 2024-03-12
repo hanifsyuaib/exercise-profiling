@@ -114,11 +114,43 @@
 
       
 **Kesimpulan:**
+
 Iya ada improvement dari pengukuran dengan JMeter. Hal ini terjadi setelah melakukan optimisasi pada setiap method yang
-memerlukan optimisasi, yaitu di bagian StudentService.java.
+memerlukan optimisasi, yaitu di bagian StudentService.java. Beberapa bagian yang mengalami improvement adalah sample time dimana
+misal di all-student dari sekitar 27000 ms menjadi sekitar 900 ms, latency dimana misal di all-student dari sekitar 27000 menjadi 
+sekitar 900, throughput dimana misal di all-student-name dari 2.5/sec menjadi 9.8/sec. Jadi, dengan memakai JMeter akan sangat
+membantu sebagai alat ukur peforma program untuk melakukan optimisasi.
 
 
 ## Reflection
 
-1. s
-2. d
+1. Perbedaan antara kedua tersebut adalah JMeter melakukan evaluasi terhadap performa program secara keseluruhan dan
+melakukan evaluasi pada aplikasi saat melakukan pekerjaannya. Sedangkan, Intellij Profiler memberikan informasi detail
+mengenai karakteristik peforma dari program. Keduanya merupakan tools yang dapat digunakan dalam membantu 
+optimisasi pada program.
+
+2. Profiling process membantu saya pada menganalis secara mendetail dari aktivitas/performa yang dilakukan program.
+Hal tersebut mempermudah dan mempercepat dalam melacak weak point pada program. Setelah itu, melakukan perubahan atau
+optimisasi pada program hingga mencapai performa yang diharapkan.
+
+3. Iya, Intellij Profiler akan efektif karena memiliki interface yang user friendly, memiliki fitur yang banyak dalam 
+melakukan profiling sehingga tinggal dipilih aja yang sesuai kebutuhan, memberikan informasi performa metrics secara mendetail,
+dan bisa melakukan profiling secara real-time.
+
+4. Hal utama yang saya alami kesulitan adalah data yang diberikan pada profiling begitu detail dan banyak, membuat saya
+kesulitan memahami di awal. Setelah itu, saya membaca ulang pelan-pelan sekaligus mengacu pada definisinya hingga akhirnya
+saya memahami bagian-bagian yang saya merasa kesulitan memahami diawal. Lalu, setelah itu saya melakukan optimisasi pada program.
+
+5. Keuntungan utama yang saya dapatkan adalah Intellij profiler sudah bawaan dari Intellij IDEA ultimate sehingga tidak perlu
+ribet lagi memakai profiler dari eksternal. Selain itu, fitur yang diberikan sangat banyak sehingga memberikan informasi
+yang sangat detail, tinggal dipilih saja aspek yang ingin dicari dalam melakukan profiling.
+
+6. Kembali lagi ke tujuan awal, apa yang ingin dicari dan memahami kembali kemampuan dari Intellij Profiler dan JMeter 
+dimana tentunya memiliki kelebihan dan kekurangan. Lalu, bagian informasi yang dinilai meragukan karena merupakan atau
+termasuk kelemahannya akan ditinggalkan. Sedangkan, informasi yang dinilai bagian dari kelebihannya akan dipakai sebagai
+acuan dalam mengambil keputusan dalam profiling.
+
+7. Strategi yang saya pakai adalah fokus pada bagian yang paling penting/darurat untuk dilakukannya optimisasi, sehingga
+darisitu akan memberikan dampak yang jelas pada performa dari program. Hal yang menyangkut performa biasanya berhubungan
+dengan algoritma atau database query atau lainnya. Dengan begitu, perlu melakukan refactoring hingga dipastikan 
+sudah paling optimal.
